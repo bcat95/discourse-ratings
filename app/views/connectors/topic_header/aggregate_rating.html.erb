@@ -1,7 +1,7 @@
 <% if @topic_view.topic.ratings.present? %>
   <div itemscope itemtype="http://schema.org/CreativeWorkSeries">
   	<span itemprop="name"><%= @topic_view.topic.title %></span>
-  	<% if @topic_view.topic.image_url? %>
+    <% if @topic_view.topic.image_url != "" %>
   	<span itemprop="image"><%= @topic_view.topic.image_url %></span>
   	<% end %>
     <div itemprop="aggregateRating" itemscope itemtype="http://schema.org/AggregateRating">
